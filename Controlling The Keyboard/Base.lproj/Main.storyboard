@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Controlling_The_Keyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Insert your text here..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Z2-11-onF">
+                                <rect key="frame" x="16" y="83" width="343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3D-kv-f1G">
+                                <rect key="frame" x="0.0" y="489" width="375" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qd3-C1-VBm">
+                                <rect key="frame" x="114" y="185" width="147" height="30"/>
+                                <state key="normal" title="Show your text below"/>
+                                <connections>
+                                    <action selector="onBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWC-wO-qRk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Z2-11-onF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="CUj-0R-7gY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Z3D-kv-f1G" secondAttribute="bottom" constant="178" id="JCW-Ga-tMo"/>
+                            <constraint firstItem="Qd3-C1-VBm" firstAttribute="top" secondItem="1Z2-11-onF" secondAttribute="bottom" constant="72" id="L0p-Pd-dGE"/>
+                            <constraint firstAttribute="trailing" secondItem="Z3D-kv-f1G" secondAttribute="trailing" id="Sx4-Cc-PBE"/>
+                            <constraint firstItem="Qd3-C1-VBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="d1m-Xj-4w0"/>
+                            <constraint firstItem="1Z2-11-onF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="igw-AQ-G6F"/>
+                            <constraint firstItem="1Z2-11-onF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="m0T-8d-0aK"/>
+                            <constraint firstItem="Z3D-kv-f1G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="v57-lJ-UUd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="1Z2-11-onF" id="Gp1-cL-dYV"/>
+                        <outlet property="textLabel" destination="Z3D-kv-f1G" id="7cM-uF-CVY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="356.67166416791605"/>
+        </scene>
+    </scenes>
+</document>
